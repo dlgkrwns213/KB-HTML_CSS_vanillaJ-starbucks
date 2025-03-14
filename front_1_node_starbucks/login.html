@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks</title>
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script type="module" src="js/routing.mjs"></script>
   </head>
   <body>
     <header>
@@ -26,34 +29,7 @@
         </nav>
       </div>
     </header>
-    <div class="login_container">
-      <h2>로그인</h2>
-      <form>
-        <div class="login_container">
-          <form>
-            <div class="form_group">
-              <input
-                type="text"
-                placeholder="아이디를 입력해 주세요."
-                required
-              />
-            </div>
-            <div class="form_group">
-              <input
-                type="password"
-                placeholder="비밀번호를 입력해 주세요."
-                required
-              />
-            </div>
-            <div class="checkbox_group">
-              <input type="checkbox" id="remember" />
-              <label for="remember">아이디 저장</label>
-            </div>
-            <button type="submit" class="login_button">로그인</button>
-          </form>
-        </div>
-      </form>
-    </div>
+    <section class="main_products"></section>
     <footer>
       <div class="footer">
         <img src="src/images/footer.png" />

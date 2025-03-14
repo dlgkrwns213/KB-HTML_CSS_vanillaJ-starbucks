@@ -8,7 +8,7 @@ async function getTotalCoffeeData() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+export async function drawProduct() {
   const mainSection = document.querySelector('.main_products .container');
 
   if (!mainSection) return;
@@ -35,4 +35,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     `;
     mainSection.appendChild(card);
   });
-});
+};

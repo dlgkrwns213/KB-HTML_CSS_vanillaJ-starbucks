@@ -5,58 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장바구니</title>
     <link rel="stylesheet" href="./css/cart.css" />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script type="module" src="js/routing.mjs"></script>
   </head>
   <body>
     <header>
       <div class="header">
-          <div class="logo">
-              <img src="src/images/logo.png">
-          </div>
-          <nav>
-              <ul class="menu">
-                  <li class="products"><a href="#">음료</a></li>
-                  <li class="cart"><a href="#">장바구니</a></li>
-                  <li class="orders"><a href="#">주문목록</a></li>
-                  <li><a href="#">로그인</a></li>
-                  <li><a href="#">로그아웃</a></li>   
-                  <li><a href="#">가입</a></li>
-              </ul>
-          </nav>
+        <div class="logo">
+          <img src="src/images/logo.png" />
+        </div>
+        <nav>
+          <ul class="menu">
+            <li class="products"><a href="#">음료</a></li>
+            <li class="cart"><a href="#">장바구니</a></li>
+            <li class="orders"><a href="#">주문목록</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">로그아웃</a></li>
+            <li><a href="#">가입</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div class="cart_container">
-      <h2>장바구니</h2>
-      <div class="cart_item">
-        <img src="./src/images/c0001.jpg" alt="아메리카노" />
-        <div class="cart_item_info">
-          <p><strong>상품명 : </strong> 아메리카노</p>
-          <p><strong>가격 : </strong> 3500원</p>
-          <p><strong>수량 : </strong> 2</p>
-        </div>
-      </div>
-      <div class="cart_item">
-        <img src="./src/images/c0002.jpg" alt="아이스아메리카노" />
-        <div class="cart_item_info">
-          <p><strong>상품명 : </strong> 아이스아메리카노</p>
-          <p><strong>가격 : </strong> 4000원</p>
-          <p><strong>수량 : </strong> 2</p>
-        </div>
-      </div>
-      <div class="cart_item">
-        <img src="./src/images/c0003.jpg" alt="라떼" />
-        <div class="cart_item_info">
-          <p><strong>상품명 : </strong> 라떼</p>
-          <p><strong>가격 : </strong> 4000원</p>
-          <p><strong>수량 : </strong> 2</p>
-        </div>
-      </div>
-      <button class="order_button">주문하기</button>
-    </div>
+
+    <section class="main_products"></section>
     <footer>
       <div class="footer">
-          <img class="footer" src="src/images/footer.png">
+        <img class="footer" src="src/images/footer.png" />
       </div>
     </footer>
   </body>
