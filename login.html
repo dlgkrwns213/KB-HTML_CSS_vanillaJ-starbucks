@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="src/images/logo.png" />
+        </div>
+        <nav>
+          <ul class="menu">
+            <li class="products"><a href="#">음료</a></li>
+            <li class="cart"><a href="#">장바구니</a></li>
+            <li class="orders"><a href="#">주문목록</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">로그아웃</a></li>
+            <li><a href="#">가입</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="login_container">
+      <h2>로그인</h2>
+      <form>
+        <div class="login_container">
+          <form>
+            <div class="form_group">
+              <input
+                type="text"
+                placeholder="아이디를 입력해 주세요."
+                required
+              />
+            </div>
+            <div class="form_group">
+              <input
+                type="password"
+                placeholder="비밀번호를 입력해 주세요."
+                required
+              />
+            </div>
+            <div class="checkbox_group">
+              <input type="checkbox" id="remember" />
+              <label for="remember">아이디 저장</label>
+            </div>
+            <button type="submit" class="login_button">로그인</button>
+          </form>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer">
+        <img src="src/images/footer.png" />
+      </div>
+    </footer>
+  </body>
+</html>

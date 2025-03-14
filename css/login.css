@@ -1,0 +1,69 @@
+/* 초기화  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 로그인  */
+.login_container {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.login_container h2 {
+  text-align: center;
+  font-size: 24px;
+  /* font-weight: bold; */
+  color: burlywood;
+}
+.form_group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form_group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid beige;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form_group input:focus {
+  border-color: burlywood;
+}
+.checkbox_group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.checkbox_group input {
+  margin-right: 5px;
+  accent-color: burlywood;
+}
+
+.login_button {
+  width: 100%;
+  padding: 12px;
+  background: beige;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

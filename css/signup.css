@@ -1,0 +1,23 @@
+fieldset {
+  background-color: burlywood;
+  border-color: burlywood;
+  border: none;
+  border-radius: 30px 30px 10px 10px;
+}
+table {
+  margin: 0 auto;
+}
+.textarea {
+  border: none;
+}
+.table_text {
+  color: beige;
+  font-weight: 300;
+}
+
+#signup_button {
+  margin-top: 10px;
+  color: burlywood;
+  border: none;
+  border-radius: 3px;
+}

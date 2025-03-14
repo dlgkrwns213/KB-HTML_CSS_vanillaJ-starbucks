@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  height: 100%;
+  min-width: 250px;
+}
+article {
+  width: 75%;
+  float: left;
+  background-color: antiquewhite;
+}
+
+aside {
+  width: 25%;
+  height: 100%;
+
+  min-height: 600px;
+  float: right;
+  background-color: rgb(231, 231, 231);
+
+  background-clip: border-box;
+  position: relative;
+}
+
+section.main_products {
+  overflow: hidden;
+}
+
+dl {
+  display: flex; /* 가로 정렬 */
+  flex-wrap: wrap; /* 너무 많으면 다음 줄로 */
+  gap: 20px;
+}
+dt {
+  text-align: center; /* 이미지 중앙 정렬 */
+}
+dd {
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin: 5px 0;
+}
+
+.container {
+  /* 임시 작성 */
+  position: static;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* 카드 사이 간격 */
+  justify-content: center;
+  padding: 20px;
+}
+
+.container > .card img {
+  width: 100%;
+}
+
+.container > .card p {
+  padding: 10px;
+  margin-top: 10px;
+  /* background-color: burlywood; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* font-size: small; */
+  text-align: center;
+  height: 40px;
+  /* transition: transform 0.3s ease-in-out; */
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover {
+  transform: scale(1.05); /* 마우스 오버 시 확대 */
+}
+
+aside > .advertisement {
+  width: 92%;
+  height: 99%;
+  background-color: white;
+
+  /* 중앙 위치 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.container>.card .card_image {
+  overflow: hidden;
+}
+
+.container>.card .card_image img:hover {
+  transform: scale(1.15); /* 1.15배 확대 */
+  transition-duration: 0.7s;  /* 천천히 확대 */
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+
+  aside {
+    min-height: 200px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .container > .card {
+    width: 49%;
+    margin: 0 0.5%;
+  }
+
+  .container > .card p {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  article {
+    width: 100%;
+  }
+
+  aside {
+    min-height: 200px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .container > .card {
+    width: 100%;
+  }
+
+  .container > .card p {
+    height: 20px;
+  }
+}

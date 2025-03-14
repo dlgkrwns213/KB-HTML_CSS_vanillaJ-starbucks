@@ -1,0 +1,83 @@
+section {
+    display: flex;
+    gap: 20px; /* 이미지와 설명 사이의 간격 */
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+/* 설명 부분 */
+section > div {
+    flex: 2; /* 설명 부분의 비율을 더 크게 설정 */
+}
+/* 제목, 설명 등의 스타일 */
+section > div > div {
+    margin-bottom: 20px;
+}
+section > div hr {
+    margin: 10px 0;
+}
+/* 수량 선택과 장바구니 버튼 부분 */
+label, select, button {
+    font-size: 16px;
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.coffee_type {
+    order: 1;
+}
+.coffee_container {
+    order: 2;
+    display: flex;
+    flex-direction: row; /* 이미지와 설명을 가로 정렬 */
+    gap: 20px; /* 이미지와 설명 사이 간격 */
+}
+.information {
+    order: 3;
+}
+.coffee {
+    flex: 1;
+    max-width: 500px; /* 이미지의 최대 너비 설정 */
+}
+.coffee img {
+    width: 100%; /* 이미지를 부모 요소에 맞게 크기 조정 */
+    height: auto;
+}
+div.coffee_type{
+    font-size: 200%;
+    font-style: bold;
+}
+div.product_name{
+    font-size: 200%;
+    font-style: bold;
+}
+/* 작은 화면에서 반응형 처리 */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* 작은 화면에서는 세로로 배치 */
+        align-items: center;
+    }
+
+    .coffee {
+        max-width: 100%;
+    }
+
+    section > div {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+div.header{
+    left: 0; top: 0; right: 0;
+    height: 90px;
+    position: fixed;
+    background-color: burlywood;
+
+    /* 가장 위로 설정 */
+    z-index: 10000;
+}
+div.logo{
+    float: left;
+}
+ul.menu{
+    float: right;
+}
+li{
+    list-style: none;
+    float: left; padding: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+    ul.menu{
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="css\signup.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+          <div class="logo">
+              <img src="src/images/logo.png">
+          </div>
+          <nav>
+              <ul class="menu">
+                  <li class="products"><a href="#">음료</a></li>
+                  <li class="cart"><a href="#">장바구니</a></li>
+                  <li class="orders"><a href="#">주문목록</a></li>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">로그아웃</a></li>   
+                  <li><a href="#">가입</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <fieldset>
+      <table>
+        <tr>
+          <td class="table_text"><label for="user_id">아이디 입력</label></td>
+          <td><input id="user_id" type="text" class="textarea" /></td>
+        </tr>
+        <tr>
+          <td class="table_text">
+            <label for="password">비밀번호 입력</label>
+          </td>
+          <td><input id="password" type="password" class="textarea" /></td>
+        </tr>
+        <tr>
+          <td class="table_text">
+            <label for="password_verification">비밀번호 확인</label>
+          </td>
+          <td>
+            <input
+              id="password_verification"
+              type="password"
+              class="textarea"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="table_text">
+            <label for="user_email">이메일 입력</label>
+          </td>
+          <td><input id="user_email" type="email" class="textarea" /></td>
+        </tr>
+        <tr>
+          <td class="table_text">성별</td>
+          <td class="table_text">
+            <input id="man" type="checkbox" name="gender" value="m" />
+            <label for="man">남</label>
+            <input id="woman" type="checkbox" name="gender" value="w" />
+            <label for="woman">여</label>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="회원가입" id="signup_button" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <footer>
+      <div class="footer">
+          <img src="src/images/footer.png">
+      </div>
+    </footer>
+  </body>
+</html>
