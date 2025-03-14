@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/products.css" />
     <script src="./js/products.js"></script>
+    <script type="module" src="js/routing.mjs"></script>
+
   </head>
   <body>
     <header>
@@ -27,68 +29,8 @@
         </nav>
       </div>
     </header>
-    <section>
-      <div class="container">
-        <div class="coffee_type">
-          <!-- 콜드 브루 -->
-        </div>
-        <div class="coffee_container">
-          <div class="coffee">
-            <img class="product_num" src="./src/images/C0001.jpg" />
-          </div>
-          <div>
-            <div>
-              <div class="product_name">나이트로 바닐라 크림</div>
-              <div class="product_Ename">
-                <!-- Nitro Vanilla Cream -->
-              </div>
-              <hr />
-              <div class="information">
-                <!-- 부드러운 목넘김의 나이트로 바닐라 크림의 매력을 한번에 느껴보세요! -->
-              </div>
-              <div>제품 영양 정보</div>
-              <div class="size">Tall(톨) / 355ml</div>
-              <hr />
-              <table>
-                <tr>
-                  <td>1회 제공량 (kcal)</td>
-                  <td class="kcal">80</td>
-                  <td>나트륨 (mg)</td>
-                  <td class="nat">40</td>
-                </tr>
-                <tr>
-                  <td>포화지방 (g)</td>
-                  <td class="fat">2</td>
-                  <td>당류 (g)</td>
-                  <td class="sugar">10</td>
-                </tr>
-                <tr>
-                  <td>단백질 (g)</td>
-                  <td class="protein">1</td>
-                  <td>카페인 (mg)</td>
-                  <td class="caffeine">232</td>
-                </tr>
-              </table>
-            </div>
-            <label for="number">수량</label>
-            <select id="number">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-            </select>
-            <button class="cart">장바구니 담기</button>
-          </div>
-        </div>
-        <div id="under_i" class="information">
-          <!-- 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요! -->
-        </div>
-      </div>
+    <section class="main_products"></section>
+      
     </section>
     <footer>
       <div class="footer">
