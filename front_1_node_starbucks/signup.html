@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css\signup.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+
+    <script type="module" src="js/routing.mjs"></script>
   </head>
   <body>
     <header>
@@ -26,50 +28,7 @@
           </nav>
       </div>
     </header>
-    <fieldset>
-      <table>
-        <tr>
-          <td class="table_text"><label for="user_id">아이디 입력</label></td>
-          <td><input id="user_id" type="text" class="textarea" /></td>
-        </tr>
-        <tr>
-          <td class="table_text">
-            <label for="password">비밀번호 입력</label>
-          </td>
-          <td><input id="password" type="password" class="textarea" /></td>
-        </tr>
-        <tr>
-          <td class="table_text">
-            <label for="password_verification">비밀번호 확인</label>
-          </td>
-          <td>
-            <input
-              id="password_verification"
-              type="password"
-              class="textarea"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="table_text">
-            <label for="user_email">이메일 입력</label>
-          </td>
-          <td><input id="user_email" type="email" class="textarea" /></td>
-        </tr>
-        <tr>
-          <td class="table_text">성별</td>
-          <td class="table_text">
-            <input id="man" type="checkbox" name="gender" value="m" />
-            <label for="man">남</label>
-            <input id="woman" type="checkbox" name="gender" value="w" />
-            <label for="woman">여</label>
-          </td>
-        </tr>
-        <tr>
-          <td><input type="button" value="회원가입" id="signup_button" /></td>
-        </tr>
-      </table>
-    </fieldset>
+    <section class="main_products"></section>
     <footer>
       <div class="footer">
           <img src="src/images/footer.png">

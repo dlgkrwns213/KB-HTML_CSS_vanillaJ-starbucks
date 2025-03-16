@@ -1,7 +1,9 @@
 import { drawCart } from './cart.js';
 import { drawProduct } from './layout.js'
 import { drawLogin } from './login.js';
+import { drawOrderList } from './order_list.js';
 import { drawCoffeeProduct } from './products.js';
+import { drawSignupForm } from './signup.js';
 
 window.addEventListener('load', function() {
   const path = window.location.pathname;
@@ -16,6 +18,10 @@ window.addEventListener('load', function() {
     drawCart();
   } else if (path.endsWith('/products.html')) {
     drawCoffeeProduct();
+  } else if (path.endsWith('/signup.html')) {
+    drawSignupForm();
+  } else if (path.endsWith('/order_list.html')) {
+    drawOrderList();
   } else {
     console.log("알 수 없는 경로:", path);
   }

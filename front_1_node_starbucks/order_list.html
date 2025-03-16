@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css\order_list.css" />
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <script type="module" src="js/routing.mjs"></script>
+
   </head>
   <body>
     <header>
@@ -26,61 +29,8 @@
           </nav>
       </div>
     </header>
-    <div class="total_div">
-      <div class="title_style">주문목록</div>
-      <table>
-        <thead>
-          <tr class="table_row table_text_align">
-            <th class="table_gap">주문번호</th>
-            <th class="table_gap order_date">주문일자</th>
-            <th class="table_gap">상품번호</th>
-            <th class="table_gap product_name">상품명</th>
-            <th class="table_gap">가격</th>
-            <th class="table_gap">주문수량</th>
-          </tr>
-          <tr class="table_row_no_underline table_text_align">
-            <td>97</td>
-            <td>2025-03-07</td>
-            <td>C0001</td>
-            <td>아메리카노</td>
-            <td>1000</td>
-            <td>1</td>
-          </tr>
-          <tr class="table_row table_text_align">
-            <td></td>
-            <td></td>
-            <td>C0002</td>
-            <td>라테</td>
-            <td>1000</td>
-            <td>1</td>
-          </tr>
-          <tr class="table_row table_text_align">
-            <td>3</td>
-            <td>2025-03-08</td>
-            <td>C0001</td>
-            <td>아메리카노</td>
-            <td>1000</td>
-            <td>1</td>
-          </tr>
-          <tr class="table_row_no_underline table_text_align">
-            <td>43</td>
-            <td>2025-03-09</td>
-            <td>C0001</td>
-            <td>아메리카노</td>
-            <td>1000</td>
-            <td>1</td>
-          </tr>
-          <tr class="table_row table_text_align">
-            <td></td>
-            <td>2025-03-09</td>
-            <td>C0045</td>
-            <td>말차 라테</td>
-            <td>6000</td>
-            <td>2</td>
-          </tr>
-        </thead>
-      </table>
-    </div>
+    <section class="main_products"></section>
+
     <footer>
       <div class="footer">
           <img class="footer" src="src/images/footer.png">
