@@ -17,12 +17,12 @@ export function drawHeader() {
   ul.className = 'menu';
 
   const menuItems = [
-    { className: 'products', text: '음료', href: '#' },
-    { className: 'cart', text: '장바구니', href: '#' },
-    { className: 'orders', text: '주문목록', href: '#' },
-    { className: '', text: '로그인', href: '#' },
+    { className: 'products', text: '음료', href: 'layout.html' },
+    { className: 'cart', text: '장바구니', href: 'cart.html' },
+    { className: 'orders', text: '주문목록', href: 'order_list.html' },
+    { className: '', text: '로그인', href: 'login.html' },
     { className: '', text: '로그아웃', href: '#' },
-    { className: '', text: '가입', href: '#' }
+    { className: '', text: '회원가입', href: 'signup.html' }
   ];
 
   menuItems.forEach(item => {
