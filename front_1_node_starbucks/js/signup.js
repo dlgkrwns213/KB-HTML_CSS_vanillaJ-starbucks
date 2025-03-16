@@ -54,7 +54,7 @@ export function drawSignupForm() {
   ["man", "woman"].forEach((id, index) => {
     const input = document.createElement("input");
     input.setAttribute("id", id);
-    input.setAttribute("type", "checkbox");
+    input.setAttribute("type", "radio");
     input.setAttribute("name", "gender");
     input.setAttribute("value", index === 0 ? "m" : "w");
 
