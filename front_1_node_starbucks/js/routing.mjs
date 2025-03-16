@@ -1,4 +1,5 @@
 import { drawCart } from './cart.js';
+import { drawFooter, drawHeader } from './header_footer.js';
 import { drawProduct } from './layout.js'
 import { drawLogin } from './login.js';
 import { drawOrderList } from './order_list.js';
@@ -9,6 +10,7 @@ window.addEventListener('load', function() {
   const path = window.location.pathname;
 
   console.log(path);
+  drawHeader();
 
   if (path.endsWith('/layout.html')) {
     drawProduct();
@@ -26,4 +28,5 @@ window.addEventListener('load', function() {
     console.log("알 수 없는 경로:", path);
   }
 
+  drawFooter();
 })

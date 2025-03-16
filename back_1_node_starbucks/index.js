@@ -57,6 +57,9 @@ const products = [
   },
 ];
 
+// 장바구니 [{prodId: Count}] 형태
+const carts = {C0001: 1, C0002: 2, C0007: 1};
+
 app.get('/product', (req, res) => {
   //   res.send('아메리카노, 아이스아메리카노, 라테');
   res.json(products);
@@ -86,10 +89,6 @@ app.get('/product/:prodNo', (req, res) => {
   }
   res.json(product);
 });
-
-
-// 장바구니 [{prodId: Count}] 형태
-const carts = {C0001: 1, C0002: 2, C0007: 1};
 
 // /cart
 app.get('/carts', (req, res) => {
