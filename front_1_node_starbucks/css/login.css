@@ -5,15 +5,20 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
 /* body */
 body {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center;
   align-items: center;
   background-color: white;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 
 /* 로그인  */
@@ -23,12 +28,14 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  position: absolute;
+  top: 25%;
 }
+
 .login_container h2 {
   text-align: center;
   font-size: 24px;
-  /* font-weight: bold; */
-  color: burlywood;
+  margin-bottom: 30px;
 }
 .form_group {
   margin-bottom: 15px;
@@ -49,7 +56,7 @@ body {
 .checkbox_group {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 10px auto;
   font-size: 14px;
 }
 .checkbox_group input {
@@ -65,5 +72,12 @@ body {
   color: black;
   font-size: 16px;
   cursor: pointer;
+  margin: 10px auto;
   border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
 }
