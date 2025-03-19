@@ -2,6 +2,7 @@ async function getTotalCoffeeData() {
   try {
     const response = await fetch('http://localhost:3000/product');
     const data = await response.json();
+    console.log(data)
     return data;
   } catch (error) {
     console.error(error);
@@ -64,9 +65,9 @@ export async function drawProduct() {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <a href="product.html?name=${encodeURIComponent(product.prodName)}">
+      <a href="products.html?prodNo=${product.prodNo}">
         <div class="card_image">
-          <img src="src/images/${product.img}" alt="${product.prodName}" />
+          <img src="src/images/${product.img}" alt="${product.prodNo}" />
         </div>
         <div class="card_descript">
           <p>${product.prodName}</p>
