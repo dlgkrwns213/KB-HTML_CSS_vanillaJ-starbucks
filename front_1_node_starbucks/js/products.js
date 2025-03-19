@@ -12,8 +12,14 @@ export async function drawCoffeeProduct() {
   const mainSection = document.querySelector('.main_products');
   if (!mainSection) return;
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const prodNo = urlParams.get("prodNo");
+  // const urlParams = new URLSearchParams(window.location.search);
+  // const prodNo = urlParams.get("prodNo");
+
+  const prodNo = location.search
+  .substring(1)
+  .split('&')
+  .find((line) => line.split('=')[0] === 'prodNo')
+  .split('=')[1];
   
   mainSection.innerHTML = ''; // 초기화
 
